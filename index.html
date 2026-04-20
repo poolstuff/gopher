@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gopher Bearing Southwest</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="./assets/images/gopher-favicon.png" />
+        <link rel="stylesheet" href="./assets/style.css" />
+    </head>
+    <body>
+        <header>
+            <a href="index.html"
+                ><img
+                    src="./assets/images/logo-crop.png"
+                    id="headerLogo"
+                    alt="Gopher Bearing logo"
+            /></a>
+
+            <nav>
+                <div id="hideList">
+                    <ul>
+                        <li>
+                            <a href="#aboutUsH1" class="rotate">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#products" class="rotate2">Products</a>
+                        </li>
+                        <li>
+                            <a href="#locationH1" class="rotate">Location</a>
+                        </li>
+                        <li>
+                            <a href="#contactUs" class="rotate2">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="barsWrapper">
+                    <a id=barsA" href="javascript:void(0);" class="icon">
+                        <i id="bars" class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+        <div id="hiddenNav">
+            <div id="hiddenNavAboutUs">
+                <a href="#aboutUsH1">ABOUT US</a>
+            </div>
+            <div id="hiddenNavProducts">
+                <a href="#products">PRODUCTS</a>
+            </div>
+            <div id="hiddenNavLocation">    
+                <a href="#locationH1">LOCATION</a>
+            </div>
+            <div id="hiddenNavLocation">
+                <a href="#contactUs">CONTACT US</a>
+            </div>
+        </div>
+
+            <h1 id="aboutUsH1">ABOUT US</h1>
+        <main class="flex-container" id="aboutUs">
+            <div class="flex-item" id="aboutUsText">
+                <p>
+                    In 1946, Gopher Bearing was founded on the principle of
+                    providing quality products, including a large local
+                    inventory at competitive prices with superior customer
+                    service. In 2001, we brought those same principles to
+                    Tucson. Along with our experienced staff, Gopher Bearing
+                    continues its dedication to knowing our customers and
+                    products. Our wide range of expertise includes fields such
+                    as:
+                </p>
+                <ul>
+                    <li>HVAC</li>
+                    <li>Wastewater Treatment</li>
+                    <li>Recycling</li>
+                    <li>Mining</li>
+                    <li>Agriculture</li>
+                    <li>Food and Beverage Processing and Packaging</li>
+                    <li>
+                        Power Generation (Solar, Nuclear, Wind, Fossil Fuel)
+                    </li>
+                    <li>Printing</li>
+                    <li>Manufacturing/OEM</li>
+                    <li>MRO</li>
+                </ul>
+                <p class="secondParagraph">
+                    In addition to high quality products from the best
+                    manufacturers, we specialize in providing our customers with
+                    a myriad of value added services including: 
+                </p>
+                <ul>
+                    <li>Cost Savings Analysis</li>
+                    <li>Inventory Reduction Programs</li>
+                    <li>Application Engineering</li>
+                    <li>Direct Relationships with Manufacturers</li>
+                    <li>Critical Emergency Services</li>
+                    <li>Large Local Inventory</li>
+                    <li>Free Training Seminars</li>
+                </p>
+            </div>
+
+            <h2 id="ourTeamH2">OUR TEAM</h2>
+            <p><span id="italics">Here are three options for the employee cards. Let me know which one you prefer, or if you want me to come with with more options. -Pablo</span></p><br />
+            <div id="ourTeam">
+                <div id="mikeCard">
+                    <card class="employeeCard">
+                        <div class="empCardHeader">
+                            <img
+                                src="./assets/images/mike.jpg"
+                                id="mikeProfilePic"
+                                alt="Mike W.'s profile picture"
+                            />
+                        </div>
+                        <div class="empCardBody">
+                            <p>Mike W.</p>
+                        </div>
+                        <div class="empCardFooter">
+                            <p>Office Manager</p>
+                        </div>
+                    </div>
+                </card>
+
+                <div id="joshCard">
+                    <card class="employeeCard">
+                        <div class="empCardHeader">
+                            <img
+                                src="./assets/images/josh.png"
+                                id="joshProfilePic"
+                                alt="Josh's profile picture"
+                            />
+                        </div>
+                        <div class="empCardBody">
+                            <p>Ninja</p>
+                        </div>
+                        <div class="empCardFooter">
+                            <p>Accountant</p>
+                        </div>
+                    </card>
+                </div>
+                
+                <div id="zachCard">
+                    <card class="employeeCard">
+                        <div class="empCardHeader">
+                            <img
+                                src="./assets/images/zach.jpg"
+                                id="zachProfilePic"
+                                alt="Zach's profile picture"
+                            />
+                        </div>
+                        <div class="empCardBody">
+                            <p>Zach A.</p>
+                        </div>
+                        <div class="empCardFooter">
+                            <p>Sales</p>
+                        </div>
+                    </card>
+                </div>
+                
+                <div id="daveCard">
+                    <card class="employeeCard">
+                        <div class="empCardHeader">
+                            <img
+                                src="./assets/images/dave.jpg"
+                                id="daveProfilePic"
+                                alt="Dave's profile picture"
+                            />
+                        </div>
+                        <div class="empCardBody">
+                            <p>Dave</p>
+                        </div>
+                        <div class="empCardFooter">
+                            <p>Sales</p>
+                        </div>
+                    </card>
+                </div>
+            </div>
+            <!-- With borders around cards -->
+            <div id="ourTeam1">
+                <div id="mikeCard1">
+                    <card class="employeeCard">
+                        <div class="empCardHeader" id="mikeHeader">
+                            <img
+                                src="./assets/images/mike.jpg"
+                                id="mikeProfilePic"
+                                alt="Mike W.'s profile picture"
+                            />
+                        </div>
+                        <div class="empCardBody">
+                            <p>Mike W.</p>
+                        </div>
+                        <div class="empCardFooter">
+                            <p>Office Manager</p>
+                        </div>
+                    </div>
+                </card> 
+
+                <div id="joshCard1">
+                    <card class="employeeCard">
+                        <div class="empCardHeader" id="joshHeader">
+                            <img
+                                src="./assets/images/josh.png"
+                                id="joshProfilePic"
+                                alt="Josh's profile picture"
+                            />
+                        </div>
+                        <div class="empCardBody">
+                            <p>Ninja</p>
+                        </div>
+                        <div class="empCardFooter">
+                            <p>Accountant</p>
+                        </div>
+                    </card>
+                </div>
+                
+                <div id="zachCard1">
+                    <card class="employeeCard">
+                        <div class="empCardHeader" id="zachHeader">
+                            <img
+                                src="./assets/images/zach.jpg"
+                                id="zachProfilePic"
+                                alt="Zach's profile picture"
+                            />
+                        </div>
+                        <div class="empCardBody">
+                            <p>Zach A.</p>
+                        </div>
+                        <div class="empCardFooter">
+                            <p>Sales</p>
+                        </div>
+                    </card>
+                </div>
+                
+                <div id="daveCard1">
+                    <card class="employeeCard">
+                        <div class="empCardHeader" id="daveHeader">
+                            <img
+                                src="./assets/images/dave.jpg"
+                                id="daveProfilePic"
+                                alt="Dave's profile picture"
+                            />
+                        </div>
+                        <div class="empCardBody">
+                            <p>Dave</p>
+                        </div>
+                        <div class="empCardFooter">
+                            <p>Sales</p>
+                        </div>
+                    </card>
+                </div>
+            </div>
+            <!-- With styled card -->
+            <div id="ourTeam2">
+                <div id="mikeCard2">
+                    <card class="employeeCard">
+                        <div class="empCardHeader">
+                            <img
+                                src="./assets/images/mike.jpg"
+                                id="mikeProfilePic"
+                                alt="Mike W.'s profile picture"
+                            />
+                        </div>
+                        <div class="empCardBody">
+                            <p>Mike W.</p>
+                        </div>
+                        <div class="empCardFooter">
+                            <p><span class="bold">Office Manager</span></p><br />
+                            <p class="notBoldLeft">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem nihil natus inventore accusamus! Vero eum laudantium earum blanditiis aspernatur quibusdam nostrum officiis, tempora reiciendis! Qui, suscipit. Dicta atque voluptatibus pariatur.</p>
+                        </div>
+                    </div>
+                </card>
+
+                <div id="joshCard2">
+                    <card class="employeeCard">
+                        <div class="empCardHeader">
+                            <img
+                                src="./assets/images/josh.png"
+                                id="joshProfilePic"
+                                alt="Josh's profile picture"
+                            />
+                        </div>
+                        <div class="empCardBody">
+                            <p>Ninja</p>
+                        </div>
+                        <div class="empCardFooter">
+                            <p><span class="bold">Accountant</span></p><br />
+                            <p class="notBoldLeft">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, ut? Nam enim iure eius voluptatum reprehenderit impedit cum doloribus consectetur in odio, eveniet quas minus molestiae pariatur deserunt atque illum.</p>
+                        </div>
+                    </card>
+                </div>
+                
+                <div id="zachCard2">
+                    <card class="employeeCard">
+                        <div class="empCardHeader">
+                            <img
+                                src="./assets/images/zach.jpg"
+                                id="zachProfilePic"
+                                alt="Zach's profile picture"
+                            />
+                        </div>
+                        <div class="empCardBody">
+                            <p>Zach A.</p>
+                        </div>
+                        <div class="empCardFooter">
+                            <p><span class="bold">Sales</span></p><br />
+                            <p class="notBoldLeft">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime aut, quas beatae ad ex natus molestiae totam est quod deleniti error voluptate, distinctio consequatur, ab nam? Blanditiis tempora voluptas quod?</p>
+                        </div>
+                    </card>
+                </div>
+                
+                <div id="daveCard2">
+                    <card class="employeeCard">
+                        <div class="empCardHeader">
+                            <img
+                                src="./assets/images/dave.jpg"
+                                id="daveProfilePic"
+                                alt="Dave's profile picture"
+                            />
+                        </div>
+                        <div class="empCardBody">
+                            <p>Dave</p>
+                        </div>
+                        <div class="empCardFooter">
+                            <p><span class="bold">Sales</span></p><br />
+                            <p class="notBoldLeft">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis odit, nostrum dolorum a dolor sequi officia omnis, quos maxime sed suscipit ad eaque optio deleniti saepe distinctio voluptate ipsam fugit!</p>
+                        </div>
+                    </card>
+                </div>
+            </div>
+
+
+            <h2 id="membershipsH2">MEMBERSHIPS</h2>
+            <div class="flex-item" id="memberships">
+                <img
+                    src="./assets/images/WBENC.png"
+                    alt="Certified Women's Business Enterprise member"
+                />
+                
+                <img
+                    src="./assets/images/WJB Group.png"
+                    alt="WJB Group member"
+                />
+            </div>
+        </main>
+
+        <section id="products">
+            <h1 id="productsH1" class="sectionHeader">PRODUCTS</h1>
+            <div class="flex-container" id="productsList">
+                <div class="flex-item" id="bearings">
+                    <img class="productImg"
+                        src="./assets/images/radial-bearings.jpg"
+                    />
+                    <h3>BEARINGS</h3>
+                </div>
+                
+                <div class="flex-item" id="linearMotion">
+                    <img class="productImg"
+                        src="./assets/images/linear-motion-actuators.jpg"
+                    />
+                    <h3>LINEAR MOTION</h3>
+                </div>
+                
+                <div class="flex-item" id="lubeAdhesives">
+                    <img class="productImg"
+                        src="./assets/images/loctite.png" 
+                    /> 
+                    <h3>LUBRICATION & ADHESIVES</h3>
+                </div>
+                <!-- new pics w lubrication and grease section and thread locking, retaining, and adhesives section-->
+                <div class="flex-item" id="materialHandling">
+                    <img class="productImg"
+                        src="./assets/images/conveyor belting.jpg"
+                    />
+                    <h3>MATERIAL HANDLING</h3>
+                </div>
+
+                <div class="flex-item" id="powerTransmissions">
+                    <img class="productImg"
+                        src="./assets/images/mechanical power transmission.jpg" 
+                    /> 
+                    <h3>MECHANICAL POWER TRANSMISSIONS</h3>
+                </div>
+                <!--Need new pic of gear box-->
+                <div class="flex-item" id="motorsControls">
+                    <img class="productImg"
+                        src="./assets/images/motor.jpg"
+                    />
+                    <h3>MOTORS & CONTROLS</h3>
+                </div>
+
+                <div class="flex-item" id="seals">
+                    <img class="productImg"
+                        src="./assets/images/seals.jpg"
+                    />
+                    <h3>SEALS</h3>
+                </div>
+                
+                <div class="flex-item" id="suppliesAccessories">
+                    <img class="productImg"
+                        src="./assets/images/bearing puller.png"
+                    />
+                    <h3>SUPPLIES & ACCESSORIES</h3>
+                </div>
+                
+            </div>
+        </section>
+
+            
+        <section>
+            <h2 id="featuredManufacturers">FEATURED MANUFACTURERS</h2>
+            <div id="marquee-container">
+                <div class="marquee">
+                    <ul class="marquee-content">
+                        <li>
+                            <img class="featManCard" src="./assets/images/01.png" />
+                        </li>
+
+                        <li>
+                            <img class="featManCard" src="./assets/images/02.png" />
+                        </li>
+
+                        <li>
+                            <img class="featManCard" src="./assets/images/03.png" />
+                        </li>
+                        
+                        <li>
+                            <img class="featManCard" src="./assets/images/04.png" />
+                        </li>
+
+                        <li>
+                            <img class="featManCard" src="./assets/images/05.png" />
+                        </li>
+
+                        <li>
+                            <img class="featManCard" src="./assets/images/06.png" />
+                        </li>
+
+                        <li>
+                            <img class="featManCard" src="./assets/images/07.png" />
+                        </li>
+
+                        <li>
+                            <img class="featManCard" src="./assets/images/08.png" />
+                        </li>
+
+                        <li>
+                            <img class="featManCard" src="./assets/images/09.png" />
+                        </li>
+
+                        <li>
+                            <img class="featManCard" src="./assets/images/10.png" />
+                        </li>
+
+                        <li>
+                            <img class="featManCard" src="./assets/images/11.png" />
+                        </li>
+
+                        <li>
+                            <img class="featManCard" src="./assets/images/12.png" />
+                        </li>
+
+                        <li>
+                            <img class="featManCard" src="./assets/images/13.png" />
+                        </li>
+
+                        <li>
+                            <img class="featManCard" src="./assets/images/14.png" />
+                        </li>
+
+                        <li>
+                            <img class="featManCard" src="./assets/images/15.png" />
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <h1 class="sectionHeader" id="locationH1">
+            LOCATION
+        </h1>
+        <section id="location">
+            <div class="flex-item" id="locationCard">
+                <div id="locationDiv">
+                    <p id="contactInfo">3688 S. Park Ave. <br />
+                    Tucson, AZ, 85713 <br />
+                    Ph.: (520) 622-3545 <br />
+                    Toll Free: (888) 622-3545<br />
+                    Fax: (520) 622-7475 <br /></p>
+                    <p><span class="secondParagraph">HOURS OF OPERATION:</span> <br />
+                    Monday through Friday, <br />
+                    7:00am to 4:30pm</p>
+                </div>
+
+                <div id="locationImages">
+                    <img
+                            src="./assets/images/loc1.jpg"
+                        /> <br />
+                    <img
+                        src="./assets/images/loc2.jpg"
+                    />
+                </div>
+            </div>
+            <div class="map-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3376.868917838967!2d-110.95907962573506!3d32.180809314218465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86d67a7f4acd22d1%3A0xc18d435d7add904!2s3688%20S%20Park%20Ave%2C%20Tucson%2C%20AZ%2085713!5e0!3m2!1sen!2sus!4v1776150784155!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+        </section>
+
+        <section id="contactUs">
+            <div class="flex-row">
+                <h1 id="contactUsH1" class="sectionHeader">
+                    CONTACT US
+                </h1>
+                <div id="contactInstructionsCard">  
+                    <p id="contactInstructions">Please fill out the form below. For parts inquiries, please be as descriptive as possible so that we may respond quickly and accurately. <br />
+                    <span class="red">*</span><span id="boldItalics"> Required Fields</span></p>
+                </div>
+                <div id="form">
+                    <form action="mailto:pablodlc@gmail.com" method="post" enctype="text/plain">
+                        <!-- <div class="form-group">
+                            <p id="formHeader"><span class="red">*</span><span id="italics">Required Fields</span></p>
+                        </div> -->
+                        <div class="form-group">
+                            <label for="contact-name"><span class="red">*</span> Name</label>
+                            <input type="text" id="contact-name" required placeholder="Your name" />
+                            </br>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email"><span class="red">*</span> Email</label>
+                            <input type="email" id="contact-email" required placeholder="Your email address" />
+                            </br>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-phone">Phone</label>
+                            <input type="tel" id="contact-phone" placeholder="Your phone number" />
+                            </br>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-fax">Fax</label>
+                            <input type="tel" id="contact-fax" placeholder="Your fax" />
+                            </br>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-company">Company</label>
+                            <input type="text" id="contact-company" placeholder="Your company" />
+                            </br>
+                        </div>
+                        <div class="form-group">
+                            <label for="message"><span class="red">*</span> Message</label>
+                            <input type="text" id="contact-msg" required placeholder="Enter your message here" />
+                            </br>
+                        </div>
+
+                        <div id="buttons" class="form-group">
+                            <button type="submit" id="submitBtn" value="Send">SUBMIT</button>
+                            <button type="submit" id="clearBtn" value="Clear">CLEAR</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <div class="modal" id="bearingsModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="closeBtn" id="closeBearings">&times;</span>
+                    <h1>Bearings</h1>
+                </div>
+                <div class="modal-body" id="bearingsModalBody">
+                    <div id="ballRoller">
+                        <h3>Ball/Roller</h3>
+                        <p>Agricultural <span class="normalSpace">Angular&nbsp;Contact</span> <span class="normalSpace">Ball&nbsp;-&nbsp;Single&nbsp;Row</span> <span class="normalSpace">Ball&nbsp;-&nbsp;Double&nbsp;Row</span> <span class="normalSpace">Cam&nbsp;Followers</span> <span class="normalSpace">Cylindrical&nbsp;Roller</span> Miniature Needle <span class="normalSpace">Rod&nbsp;Ends</span> <span class="normalSpace">Self&nbsp;Aligning</span> <span class="normalSpace">Shaker&nbsp;Screen</span> <span class="normalSpace">Spherical&nbsp;Roller</span> <span class="normalSpace">Super&nbsp;Precision</span> <span class="normalSpace">Tapered&nbsp;Roller</span> Thrust</p>
+                    </div>
+                    <div class="modalMarginTop" id="mountedUnits">
+                        <h3 id="mountedUnitsHeader">Mounted Units</h3>
+                        <p>Cartridge <span class="normalSpace">Flange&nbsp;Block</span> <span class="normalSpace">Pillow&nbsp;Block</span> <span class="normalSpace">Take&nbsp;Up</span>
+                    </div>
+                    <div class="modalMarginTop" id="plainSleeve">
+                        <h3>Plain/Sleeve</h3>   
+                        <p>Babbit Bronze Journal Self-Lubricating</p>
+                    </div>
+                </div>
+                <div class="modalFooter" id="bearingsManufacturers">
+                    <h2>Manufacturers:</h2>
+                    <div id="bearingFooterP">
+                        <p>ABEQ Bower Graphalloy MPBy Royersford Accurate Browninge Green MRC Schatz Aetna Bunting Heim Nachi Sealmaster Alinabal Carter IKO <span class="normalSpace">New&nbsp;Hampshire&nbsp;Ball</span> SKF <span class="normalSpace">American&nbsp;Sleeve</span> Consolidated INA Nice Smith Ametric Cooper Isostatic Nolu Solidur AMI Craft Kaydon NTN Solus Andrews Dodge Killian Osborn Spherco Arguto EDT Koyo Pacific <span class="normalSpace">Split&nbsp;Ball&nbsp;Bearing</span> AST Fafnir <span class="normalSpace">Link&nbsp;Belt</span> Peer SST Auburn FAG Manitou Randall <span class="normalSpace">Sterling&nbsp;Stock&nbsp;Drive</span> Aurora FK Matthews RBC Thompson Barden Frantz MB RBI Timken BCA Freeway McGill Reliable <span class="normalSpace">Torque&nbsp;Transmission</span> Berliss FYH Miether Rexnord Boca General Moline RHP Triangle Boston Gear GMN  Morse Rollway <span class="normalSpace">WM&nbsp;Berg</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="linearMotionModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="closeBtn" id="closeLinearMotion">&times;</span>
+                    <h1>Linear Motion</h1>
+                </div>
+                <div id="linearMotionJustify" class="modal-body">
+                        <p>Actuators <span class="normalSpace">Ball&nbsp;Transfers</span> Shafting <span class="normalSpace">Ball&nbsp;Bushings</span> Rails Tracks <span class="normalSpace">Ball&nbsp;Screws</span> <span class="normalSpace">Servo&nbsp;Systems</span> V-Guides</p>
+                </div>
+                <div class="modalFooter">
+                    <h2>Manufacturers:</h2>
+                    <div id="linearMotionFooterP">
+                        <p>Bishop-Weiscarver IKO NB <span class="normalSpace">Rockford&nbsp;Ball</span> THK Brewer INA Nook Rollon Thompson CCVI Kurtz NSK Schneeberger Danaherr <span class="normalSpace">Lee&nbsp;Controls</span> Pacific SKF  <span class="normalSpace">G&nbsp;&&nbsp;G</span> Lintech PI <span class="normalSpace">Star&nbsp;Linear</span> Igus Medalist Reliance <span class="normalSpace">Stock&nbsp;Drive</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="lubeAdhesivesModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="closeBtn" id="closeLubeAdhesives">&times;</span>
+                    <h1>Lubrication and Adhesives</h1>
+                </div>
+                <div id="lubeAdhesivesJustify" class="modal-body">
+                    <p>Adhesives Grease Paints Cleaners <span class="normalSpace">Lube&nbsp;Systems</span> Sealants Degreasers Lubricants Solvents Epoxies <span class="normalSpace">Micro&nbsp;Poly</span> <span class="normalSpace">Thread&nbsp;Locker</span></p>
+                </div>
+                <div class="modalFooter">
+                    <h2>Manufacturers:</h2>
+                    <div id="lubeAdhesivesFooterP">
+                        <p>Alemite <span class="normalSpace">Dow&nbsp;Corning</span> Lubriplate Never-Seez Staybond Anti-Seez Loctite Micropoly Permatex WD-40 Bostick LPS Mystic Saf-T-Lok</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="materialHandlingModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="closeBtn" id="closeMaterialHandling">&times;</span>
+                    <h1>Material Handling</h1>
+                </div>
+                <div class="modal-body" id="materialHandlingModalBody">
+                    <div id="conveyors">
+                        <h3>Conveyors</h3>
+                        <p>Apron Bucket Gravity Drag Elevator <span class="normalSpace">Food&nbsp;Grade</span> Powered Screw Vibrating</p>
+                    </div>
+                    <div id="components">
+                        <h3 class="modalMarginTop">Components</h3>  
+                        <p><span class="normalSpace">Belt&nbsp;Fasteners</span> <span class="normalSpace">Belt&nbsp;Idlers</span> <span class="normalSpace">Belt&nbsp;Lacers</span> <span class="normalSpace">Belt&nbsp;Scrapers</span> Belting <span class="normalSpace">Table&nbsp;Top</span> <span class="normalSpace">Troughing&nbsp;Idlers</span> Wire</p>  
+                    </div>
+                    <div id="driveComponents">
+                        <h3 class="modalMarginTop"><span class="normalSpace">Drive Components</span></h3>  
+                        <p>Hoppers <span class="normalSpace">Pulley&nbsp;Lagging</span> Pulleys <span class="normalSpace">Take&nbsp;Up&nbsp;Assemblies</span> Vibrators <span class="normalSpace">Wing&nbsp;Pulleys</span></p>  
+                    </div>
+                </div>
+                <div class="modalFooter">
+                    <h2>Manufacturers:</h2>
+                    <div id="materialHandlingFooterP">
+                        <p>Alba <span class="normalSpace">Cambridge&nbsp;Wirecloth</span> Goodman Nolu Solidur <span class="normalSpace">Alloy&nbsp;Wire&nbsp;Belt</span> Chantland Goodyear <span class="normalSpace">North&nbsp;American</span> Stephens-Adamson Apache Dunlop Habasit Omni Thomas Ashworth Fenner KWS PCI <span class="normalSpace">Valu&nbsp;Guide</span> Audubon Flexco <span class="normalSpace">Mash&nbsp;Belt</span> Rexnord <span class="normalSpace">Wire&nbsp;Belt</span> Beltservice FMC Maxi-Lift Sampla</p>
+                    </div>
+                </div>
+            </div>
+        </div>    
+
+        <div class="modal" id="powerTransmissionsModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="closeBtn" id="closePowerTransmissions">&times;</span>
+                    <h1>Mechanical Power Transmissions</h1>
+                </div>
+                <div class="modal-body" id="powerTransmissionsModalBody">
+                    <div id="powerTransmissionBelts">       
+                            <h3>Belts</h3>
+                            <p>Endless FHP HTD Kevlar <span class="normalSpace">Poly&nbsp;Chain</span> <span class="normalSpace">Steel&nbsp;Cable</span> Synchronous Timing <span class="normalSpace">Variable&nbsp;Speed</span> V-Belts</p>
+                    </div>
+                    <div class="modalMarginTop" id="powerTransmissionChains">       
+                            <h3>Chains</h3>
+                            <p>Attachmentss Conveyor Couplings Engineered Idlers Leaf Roller Silent <span class="normalSpace">Table&nbsp;Top</span>
+                    </div>
+                    <div class="modalMarginTop" id="powerTransmissionCouplings">       
+                            <h3>Couplings</h3>
+                            <p>Disc Elastomeric Flexible Fluid Gear Grid Jaw Magnetic Rigid</p>
+                    </div>
+                    <div class="modalMarginTop" id="powerTransmissionDriveSystems">       
+                            <h3><span class="normalSpace">Drive Systems</span></h3>
+                            <p>Backstops Brakes Busings Clutches Pulleys Sheaves <span class="normalSpace">Torque&nbsp;Limiters</span> <span class="normalSpace">Variable&nbsp;Speed&nbsp;Drives</span></p>
+                    </div>
+                    <div class="modalMarginTop" id="powerTransmissionGearReducers">       
+                            <h3><span class="normalSpace">Gear Reducers</span></h3>
+                            <p><span class="normalSpace">Cycloid Disc</span> Helical <span class="normalSpace">Miter&nbsp;Box</span> <span class="normalSpace">Planet&nbsp;Gear</span> <span class="normalSpace">Right&nbsp;Angle</span> <span class="normalSpace">Scoop&nbsp;Mount</span> <span class="normalSpace">Shaft&nbsp;Mount</span> <span class="normalSpace">Worm&nbsp;Gear</span></p>
+                    </div>
+                    <div class="modalMarginTop" id="powerTransmissionGears">       
+                            <h3>Gears</h3>
+                            <p>Bevel Change Helical Miter Rack <span class="normalSpace">Spiral&nbsp;Bevel</span> Spur  Worm</p>
+                    </div>
+                </div>
+                <div class="modalFooter">
+                    <h2>Manufacturers:</h2>
+                    <div id="powerTransmissionsFooterP">
+                        <p>Ajax <span class="normalSpace">Drives&nbsp;Inc.</span> <span class="normalSpace">Hub&nbsp;City</span> Pix <span class="normalSpace">System&nbsp;Plast</span> <span class="normalSpace">Allied&nbsp;Locke</span> Dynacorp Jason Ramsey Thomas Ametric Dyna-Veyor Kopflex Reeves <span class="normalSpace">Torque&nbsp;Transmission</span> AnglGear Eagle Kraft <span class="normalSpace">Renold&nbsp;Jeffrey</span> Uni-Chain Autogard <span class="normalSpace">Electra&nbsp;Gear</span> KVP Rexnord Union Beltcorp Falk <span class="normalSpace">Linn&nbsp;Gear</span> Ruland <span class="normalSpace">US&nbsp;Tsubaki</span> <span class="normalSpace">Boston&nbsp;Gear</span> Fenner Lovejoy SCI <span class="normalSpace">Valu&nbsp;Guide</span> Breco-Flex <span class="normalSpace">Foote&nbsp;Jones</span> Magnaloy Sier-Bath <span class="normalSpace">Von&nbsp;Ruden</span> Browning <span class="normalSpace">G&nbsp;&&nbsp;G</span> Martin Solus Webster Carlisle Gates Maurey <span class="normalSpace">Speed&nbsp;Control</span> Wichita Climax Goodyear Mitrpak <span class="normalSpace">Speed&nbsp;Selector</span> Winsmith <span class="normalSpace">Collars&nbsp;&&nbsp;Couplings</span> <span class="normalSpace">Grove&nbsp;Gear</span> Moline Stafford <span class="normalSpace">WM&nbsp;Berg</span> <span class="normalSpace">Cone&nbsp;Drive</span> Hi-Lo Morse Stober Zurn <span class="normalSpace">David&nbsp;Brown</span> Hitachi <span class="normalSpace">Nord&nbsp;Gear</span> <span class="normalSpace">Stock&nbsp;Drive</span> Dayco Horton Optibelt Sumitomo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="motorsControlsModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="closeBtn" id="closeMotorsControls">&times;</span>
+                    <h1>Motors & Controls</h1>
+                </div>
+                <div id="motorsJustify" class="modal-body">
+                        <p><span class="normalSpace">AC Motors</span> <span class="normalSpace">DC Motors</span> Encoders Servos Brakes <span class="normalSpace">Gear Motors</span> Starters Clutches Inverters Tachometers Sensors <span class="normalSpace">Variable Speed Drives</span></p>
+                </div>
+                <div class="modalFooter">
+                    <h2>Manufacturers:</h2>
+                    <div id="motorsControlsFooterP">
+                        <p>Baldor Danaher Hitachi <span class="normalSpace">Reeve&nbsp;Reliance</span> <span class="normalSpace">Warner&nbsp;Electric</span> Boehm Emerson Leeson Sew-Eurodrive WEG <span class="normalSpace">Boston&nbsp;Gear</span> Fincor Marathon Stearns Browning GE <span class="normalSpace">Metric&nbsp;Motor</span> <span class="normalSpace">US&nbsp;Motor</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="sealsModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="closeBtn" id="closeSeals">&times;</span>
+                    <h1>Seals</h1>
+                </div>
+                <div id="sealsJustify" class="modal-body">
+                    <p>Bellows <span class="normalSpace">Mechanical&nbsp;Seals</span> Gaskets <span class="normalSpace">Oil&nbsp;Seals</span> Isolators O-rings</p>
+                </div>
+                <div class="modalFooter">
+                    <h2>Manufacturers:</h2>
+                    <div id="sealsFooterP">
+                        <p>APG CR National <span class="normalSpace">Sealing&nbsp;Specialties</span> <span class="normalSpace">US&nbsp;Seals</span> Berliss Garlock Parker Transcom</p>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        
+        <div class="modal" id="suppliesAccessoriesModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="closeBtn" id="closeSuppliesAccessories">&times;</span>
+                    <h1>Supplies & Accessories</h1>
+                </div>
+                <div id="suppliesJustify" class="modal-body">
+                    <p><span class="normalSpace">Bearing&nbsp;Heaters</span> <span class="normalSpace">Lock&nbsp;Washers</span> Shims <span class="normalSpace">Bearing&nbsp;Pullers</span> <span class="normalSpace">Power&nbsp;Locks</span> <span class="normalSpace">Steel&nbsp;Balls</span> Keystock <span class="normalSpace">Retaining&nbsp;Rings&nbsp;&&nbsp;Pliers</span> U-Joints <span class="normalSpace">Lock&nbsp;Nuts</span> <span class="normalSpace">Shaft&nbsp;Collars</span></p>
+                </div>
+                <div class="modalFooter">
+                    <h2>Manufacturers:</h2>
+                    <div id="suppliesAccessoriesFooterP">x
+                        <p><span class="normalSpace">Boston&nbsp;Gear</span> Lovejoy OTC Ringfeder Stafford <span class="normalSpace">Cone&nbsp;Mounter</span> Lubesite PIC Royersford <span class="normalSpace">Valu&nbsp;Guide</span> <span class="normalSpace">Link&nbsp;Belt</span> Maurey <span class="normalSpace">Posi&nbsp;Lock</span> Ruland</p>
+                    </div>
+                </div>
+            </div>
+        </div>    
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
+
+
+<!-- check motion industries and bearing, belt and chain, eastern industrial, and applied industrial technologies websites -->
