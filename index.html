@@ -1,413 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
+       <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Gopher Bearing Southwest</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="icon" href="./assets/images/gopher-favicon.png" />
         <link rel="stylesheet" href="./assets/style.css" />
-    </head>
     <body>
         <header>
-            <a href="index.html"
-                ><img
-                    src="./assets/images/logo-crop.png"
-                    id="headerLogo"
-                    alt="Gopher Bearing logo"
-            /></a>
+            <div id="headerWrapper">
+                <a href="index.html"
+                    ><img
+                        src="./assets/images/logo-crop.png"
+                        id="headerLogo"
+                        alt="Gopher Bearing logo"
+                /></a>
 
-            <nav>
-                <div id="hideList">
-                    <ul>
-                        <li>
-                            <a href="#aboutUsH1" class="rotate">About Us</a>
-                        </li>
-                        <li>
-                            <a href="#products" class="rotate2">Products</a>
-                        </li>
-                        <li>
-                            <a href="#locationH1" class="rotate">Location</a>
-                        </li>
-                        <li>
-                            <a href="#contactUs" class="rotate2">Contact Us</a>
-                        </li>
-                    </ul>
+                <nav>
+                    <a href="#aboutUsH1">ABOUT US</a>
+                    <a href="#productsH1">PRODUCTS</a>
+                    <a href="#locationH1">LOCATION</a>
+                    <a href="#contactUs">CONTACT US</a>
+                </nav>
+            </div>
+
+            <div class="topnav">
+                <a href="#/" class="active"
+                    ><img
+                        src="./assets/images/logo-crop.png"
+                        id="headerLogo"
+                        alt="Gopher Bearing logo"
+                /></a>
+                <div id="myLinks">
+                    <a href="#aboutUsH1">ABOUT US</a>
+                    <a href="#productsH1">PRODUCTS</a>
+                    <a href="#locationH1">LOCATION</a>
+                    <a href="#contactUs">CONTACT US</a>
                 </div>
-                <div id="barsWrapper">
-                    <a id=barsA" href="javascript:void(0);" class="icon">
-                        <i id="bars" class="fa fa-bars"></i>
-                    </a>
-                </div>
-            </nav>
+                <a
+                    href="javascript:void(0);"
+                    class="icon"
+                    onclick="myFunction()"
+                >
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
         </header>
 
-        <div id="hiddenNav">
-            <div id="hiddenNavAboutUs">
-                <a href="#aboutUsH1">ABOUT US</a>
+        <hero>
+            <div class="headerH1">
+                <h1 id="aboutUsH1" class="sectionHeader">ABOUT US</h1>
             </div>
-            <div id="hiddenNavProducts">
-                <a href="#products">PRODUCTS</a>
-            </div>
-            <div id="hiddenNavLocation">    
-                <a href="#locationH1">LOCATION</a>
-            </div>
-            <div id="hiddenNavLocation">
-                <a href="#contactUs">CONTACT US</a>
-            </div>
-        </div>
-
-            <h1 id="aboutUsH1">ABOUT US</h1>
-        <main class="flex-container" id="aboutUs">
-            <div class="flex-item" id="aboutUsText">
-                <p>
-                    In 1946, Gopher Bearing was founded on the principle of
-                    providing quality products, including a large local
-                    inventory at competitive prices with superior customer
-                    service. In 2001, we brought those same principles to
-                    Tucson. Along with our experienced staff, Gopher Bearing
-                    continues its dedication to knowing our customers and
-                    products. Our wide range of expertise includes fields such
-                    as:
-                </p>
-                <ul>
-                    <li>HVAC</li>
-                    <li>Wastewater Treatment</li>
-                    <li>Recycling</li>
-                    <li>Mining</li>
-                    <li>Agriculture</li>
-                    <li>Food and Beverage Processing and Packaging</li>
-                    <li>
-                        Power Generation (Solar, Nuclear, Wind, Fossil Fuel)
-                    </li>
-                    <li>Printing</li>
-                    <li>Manufacturing/OEM</li>
-                    <li>MRO</li>
-                </ul>
-                <p class="secondParagraph">
-                    In addition to high quality products from the best
-                    manufacturers, we specialize in providing our customers with
-                    a myriad of value added services including: 
-                </p>
-                <ul>
-                    <li>Cost Savings Analysis</li>
-                    <li>Inventory Reduction Programs</li>
-                    <li>Application Engineering</li>
-                    <li>Direct Relationships with Manufacturers</li>
-                    <li>Critical Emergency Services</li>
-                    <li>Large Local Inventory</li>
-                    <li>Free Training Seminars</li>
-                </p>
-            </div>
-
-            <h2 id="ourTeamH2">OUR TEAM</h2>
-            <p><span id="italics">Here are three options for the employee cards. Let me know which one you prefer, or if you want me to come with with more options. -Pablo</span></p><br />
-            <div id="ourTeam">
-                <div id="mikeCard">
-                    <card class="employeeCard">
-                        <div class="empCardHeader">
-                            <img
-                                src="./assets/images/mike.jpg"
-                                id="mikeProfilePic"
-                                alt="Mike W.'s profile picture"
-                            />
-                        </div>
-                        <div class="empCardBody">
-                            <p>Mike W.</p>
-                        </div>
-                        <div class="empCardFooter">
-                            <p>Office Manager</p>
-                        </div>
+            <div id="aboutUsWrapper">
+                <div id="ourTeam">
+                    <h2 class="secondaryHeader" id="ourTeamH2">Our Team</h2>
+                    <div class="empCards">
+                        <card class="empCard" id="mikeCard">
+                            <div class="empCardHeader">
+                                <img
+                                    src="./assets/images/mike.jpg"
+                                    class="empPic"
+                                    alt="Mike's profile picture"
+                                />
+                            </div>
+                            <div class="empCardDiv">
+                                <div class="empCardBody">
+                                    <p>Mike</p>
+                                </div>
+                                <div class="empCardFooter">
+                                    <p>
+                                        <span class="bold">Office Manager</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </card>
+                        <card class="empCard" id="joshCard">
+                            <div class="empCardHeader">
+                                <img
+                                    src="./assets/images/josh.png"
+                                    class="empPic"
+                                    alt="Josh's profile picture"
+                                />
+                            </div>
+                            <div class="empCardDiv">
+                                <div class="empCardBody">
+                                    <p>Josh</p>
+                                </div>
+                                <div class="empCardFooter">
+                                    <p>
+                                        <span class="bold">Accountant</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </card>
+                        <card class="empCard" id="zachCard">
+                            <div class="empCardHeader">
+                                <img
+                                    src="./assets/images/zach.jpg"
+                                    class="empPic"
+                                    alt="Zach's profile picture"
+                                />
+                            </div>
+                            <div class="empCardDiv">
+                                <div class="empCardBody">
+                                    <p>Zach</p>
+                                </div>
+                                <div class="empCardFooter">
+                                    <p>
+                                        <span class="bold">Sales</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </card>
+                        <card class="empCard" id="danCard">
+                            <div class="empCardHeader">
+                                <img
+                                    src="./assets/images/dan.jpg"
+                                    class="empPic"
+                                    alt="Dan's profile picture"
+                                />
+                            </div>
+                            <div class="empCardDiv">
+                                <div class="empCardBody">
+                                    <p>Dan</p>
+                                </div>
+                                <div class="empCardFooter">
+                                    <p>
+                                        <span class="bold">Sales</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </card>
                     </div>
-                </card>
+                </div>
 
-                <div id="joshCard">
-                    <card class="employeeCard">
-                        <div class="empCardHeader">
-                            <img
-                                src="./assets/images/josh.png"
-                                id="joshProfilePic"
-                                alt="Josh's profile picture"
-                            />
-                        </div>
-                        <div class="empCardBody">
-                            <p>Ninja</p>
-                        </div>
-                        <div class="empCardFooter">
-                            <p>Accountant</p>
-                        </div>
-                    </card>
-                </div>
-                
-                <div id="zachCard">
-                    <card class="employeeCard">
-                        <div class="empCardHeader">
-                            <img
-                                src="./assets/images/zach.jpg"
-                                id="zachProfilePic"
-                                alt="Zach's profile picture"
-                            />
-                        </div>
-                        <div class="empCardBody">
-                            <p>Zach A.</p>
-                        </div>
-                        <div class="empCardFooter">
-                            <p>Sales</p>
-                        </div>
-                    </card>
-                </div>
-                
-                <div id="daveCard">
-                    <card class="employeeCard">
-                        <div class="empCardHeader">
-                            <img
-                                src="./assets/images/dave.jpg"
-                                id="daveProfilePic"
-                                alt="Dave's profile picture"
-                            />
-                        </div>
-                        <div class="empCardBody">
-                            <p>Dave</p>
-                        </div>
-                        <div class="empCardFooter">
-                            <p>Sales</p>
-                        </div>
-                    </card>
+                <div id="aboutUsText">
+                    <p>
+                        In 1946, Gopher Bearing was founded on the principle of
+                        providing quality products, including a large local
+                        inventory at competitive prices with superior customer
+                        service. In 2001, we brought those same principles to
+                        Tucson. Along with our experienced staff, Gopher Bearing
+                        continues its dedication to knowing our customers and
+                        products. Our wide range of expertise includes fields
+                        such as:
+                    </p>
+                    <ul>
+                        <li>HVAC</li>
+                        <li>Wastewater Treatment</li>
+                        <li>Recycling</li>
+                        <li>Mining</li>
+                        <li>Agriculture</li>
+                        <li>Food and Beverage Processing and Packaging</li>
+                        <li>
+                            Power Generation (Solar, Nuclear, Wind, Fossil Fuel)
+                        </li>
+                        <li>Printing</li>
+                        <li>Manufacturing/OEM</li>
+                        <li>MRO</li>
+                    </ul>
+                    <p class="secondParagraph">
+                        In addition to high quality products from the best
+                        manufacturers, we specialize in providing our customers
+                        with a myriad of value added services including:
+                    </p>
+                    <ul>
+                        <li>Cost Savings Analysis</li>
+                        <li>Inventory Reduction Programs</li>
+                        <li>Application Engineering</li>
+                        <li>Direct Relationships with Manufacturers</li>
+                        <li>Critical Emergency Services</li>
+                        <li>Large Local Inventory</li>
+                        <li>Free Training Seminars</li>
+                    </ul>
                 </div>
             </div>
-            <!-- With borders around cards -->
-            <div id="ourTeam1">
-                <div id="mikeCard1">
-                    <card class="employeeCard">
-                        <div class="empCardHeader" id="mikeHeader">
-                            <img
-                                src="./assets/images/mike.jpg"
-                                id="mikeProfilePic"
-                                alt="Mike W.'s profile picture"
-                            />
-                        </div>
-                        <div class="empCardBody">
-                            <p>Mike W.</p>
-                        </div>
-                        <div class="empCardFooter">
-                            <p>Office Manager</p>
-                        </div>
-                    </div>
-                </card> 
-
-                <div id="joshCard1">
-                    <card class="employeeCard">
-                        <div class="empCardHeader" id="joshHeader">
-                            <img
-                                src="./assets/images/josh.png"
-                                id="joshProfilePic"
-                                alt="Josh's profile picture"
-                            />
-                        </div>
-                        <div class="empCardBody">
-                            <p>Ninja</p>
-                        </div>
-                        <div class="empCardFooter">
-                            <p>Accountant</p>
-                        </div>
-                    </card>
-                </div>
-                
-                <div id="zachCard1">
-                    <card class="employeeCard">
-                        <div class="empCardHeader" id="zachHeader">
-                            <img
-                                src="./assets/images/zach.jpg"
-                                id="zachProfilePic"
-                                alt="Zach's profile picture"
-                            />
-                        </div>
-                        <div class="empCardBody">
-                            <p>Zach A.</p>
-                        </div>
-                        <div class="empCardFooter">
-                            <p>Sales</p>
-                        </div>
-                    </card>
-                </div>
-                
-                <div id="daveCard1">
-                    <card class="employeeCard">
-                        <div class="empCardHeader" id="daveHeader">
-                            <img
-                                src="./assets/images/dave.jpg"
-                                id="daveProfilePic"
-                                alt="Dave's profile picture"
-                            />
-                        </div>
-                        <div class="empCardBody">
-                            <p>Dave</p>
-                        </div>
-                        <div class="empCardFooter">
-                            <p>Sales</p>
-                        </div>
-                    </card>
-                </div>
-            </div>
-            <!-- With styled card -->
             <div id="ourTeam2">
-                <div id="mikeCard2">
-                    <card class="employeeCard">
+                <h2 class="secondaryHeader" id="ourTeamH2">Our Team</h2>
+                <div class="empCards">
+                    <card class="empCard" id="mikeCard2">
                         <div class="empCardHeader">
                             <img
                                 src="./assets/images/mike.jpg"
-                                id="mikeProfilePic"
-                                alt="Mike W.'s profile picture"
+                                class="empPic"
+                                alt="Mike's profile picture"
                             />
                         </div>
-                        <div class="empCardBody">
-                            <p>Mike W.</p>
+                        <div class="empCardDiv">
+                            <div class="empCardBody">
+                                <p>Mike</p>
+                            </div>
+                            <div class="empCardFooter">
+                                <p>
+                                    <span class="bold">Office Manager</span>
+                                </p>
+                            </div>
                         </div>
-                        <div class="empCardFooter">
-                            <p><span class="bold">Office Manager</span></p><br />
-                            <p class="notBoldLeft">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem nihil natus inventore accusamus! Vero eum laudantium earum blanditiis aspernatur quibusdam nostrum officiis, tempora reiciendis! Qui, suscipit. Dicta atque voluptatibus pariatur.</p>
-                        </div>
-                    </div>
-                </card>
-
-                <div id="joshCard2">
-                    <card class="employeeCard">
+                    </card>
+                    <card class="empCard" id="joshCard2">
                         <div class="empCardHeader">
                             <img
                                 src="./assets/images/josh.png"
-                                id="joshProfilePic"
+                                class="empPic"
                                 alt="Josh's profile picture"
                             />
                         </div>
-                        <div class="empCardBody">
-                            <p>Ninja</p>
-                        </div>
-                        <div class="empCardFooter">
-                            <p><span class="bold">Accountant</span></p><br />
-                            <p class="notBoldLeft">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, ut? Nam enim iure eius voluptatum reprehenderit impedit cum doloribus consectetur in odio, eveniet quas minus molestiae pariatur deserunt atque illum.</p>
+                        <div class="empCardDiv">
+                            <div class="empCardBody">
+                                <p>Josh</p>
+                            </div>
+                            <div class="empCardFooter">
+                                <p>
+                                    <span class="bold">Accountant</span>
+                                </p>
+                            </div>
                         </div>
                     </card>
-                </div>
-                
-                <div id="zachCard2">
-                    <card class="employeeCard">
+                    <card class="empCard" id="zachCard2">
                         <div class="empCardHeader">
                             <img
                                 src="./assets/images/zach.jpg"
-                                id="zachProfilePic"
+                                class="empPic"
                                 alt="Zach's profile picture"
                             />
                         </div>
-                        <div class="empCardBody">
-                            <p>Zach A.</p>
-                        </div>
-                        <div class="empCardFooter">
-                            <p><span class="bold">Sales</span></p><br />
-                            <p class="notBoldLeft">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime aut, quas beatae ad ex natus molestiae totam est quod deleniti error voluptate, distinctio consequatur, ab nam? Blanditiis tempora voluptas quod?</p>
+                        <div class="empCardDiv">
+                            <div class="empCardBody">
+                                <p>Zach</p>
+                            </div>
+                            <div class="empCardFooter">
+                                <p>
+                                    <span class="bold">Sales</span>
+                                </p>
+                            </div>
                         </div>
                     </card>
-                </div>
-                
-                <div id="daveCard2">
-                    <card class="employeeCard">
+                    <card class="empCard" id="danCard2">
                         <div class="empCardHeader">
                             <img
-                                src="./assets/images/dave.jpg"
-                                id="daveProfilePic"
-                                alt="Dave's profile picture"
+                                src="./assets/images/dan.jpg"
+                                class="empPic"
+                                alt="Dan's profile picture"
                             />
                         </div>
-                        <div class="empCardBody">
-                            <p>Dave</p>
-                        </div>
-                        <div class="empCardFooter">
-                            <p><span class="bold">Sales</span></p><br />
-                            <p class="notBoldLeft">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis odit, nostrum dolorum a dolor sequi officia omnis, quos maxime sed suscipit ad eaque optio deleniti saepe distinctio voluptate ipsam fugit!</p>
+                        <div class="empCardDiv">
+                            <div class="empCardBody">
+                                <p>Dan</p>
+                            </div>
+                            <div class="empCardFooter">
+                                <p>
+                                    <span class="bold">Sales</span>
+                                </p>
+                            </div>
                         </div>
                     </card>
                 </div>
             </div>
-
-
-            <h2 id="membershipsH2">MEMBERSHIPS</h2>
+            <h2 id="membershipsH2" class="secondaryHeader">MEMBERSHIPS</h2>
             <div class="flex-item" id="memberships">
                 <img
                     src="./assets/images/WBENC.png"
                     alt="Certified Women's Business Enterprise member"
                 />
-                
+
                 <img
                     src="./assets/images/WJB Group.png"
                     alt="WJB Group member"
                 />
             </div>
-        </main>
+        </hero>
 
-        <section id="products">
+        <section id="productsSection">
             <h1 id="productsH1" class="sectionHeader">PRODUCTS</h1>
             <div class="flex-container" id="productsList">
-                <div class="flex-item" id="bearings">
-                    <img class="productImg"
-                        src="./assets/images/radial-bearings.jpg"
+                <div class="productCard" id="bearings">
+                    <img
+                        class="productImg"
+                        src="./assets/images/radial-bearings2.png"
                     />
                     <h3>BEARINGS</h3>
                 </div>
-                
-                <div class="flex-item" id="linearMotion">
-                    <img class="productImg"
-                        src="./assets/images/linear-motion-actuators.jpg"
+
+                <div class="productCard" id="linearMotion">
+                    <img
+                        class="productImg"
+                        src="./assets/images/linear-motion-actuators2.png"
                     />
                     <h3>LINEAR MOTION</h3>
                 </div>
-                
-                <div class="flex-item" id="lubeAdhesives">
-                    <img class="productImg"
-                        src="./assets/images/loctite.png" 
-                    /> 
+
+                <div class="productCard" id="lubeAdhesives">
+                    <img
+                        class="productImg"
+                        src="./assets/images/loctite2.png"
+                    />
                     <h3>LUBRICATION & ADHESIVES</h3>
                 </div>
                 <!-- new pics w lubrication and grease section and thread locking, retaining, and adhesives section-->
-                <div class="flex-item" id="materialHandling">
-                    <img class="productImg"
-                        src="./assets/images/conveyor belting.jpg"
+                <div class="productCard" id="materialHandling">
+                    <img
+                        class="productImg"
+                        src="./assets/images/conveyor_belting2.png"
                     />
                     <h3>MATERIAL HANDLING</h3>
                 </div>
 
-                <div class="flex-item" id="powerTransmissions">
-                    <img class="productImg"
-                        src="./assets/images/mechanical power transmission.jpg" 
-                    /> 
+                <div class="productCard" id="powerTransmissions">
+                    <img
+                        class="productImg"
+                        src="./assets/images/mechanical_power_transmission2.png"
+                    />
                     <h3>MECHANICAL POWER TRANSMISSIONS</h3>
                 </div>
                 <!--Need new pic of gear box-->
-                <div class="flex-item" id="motorsControls">
-                    <img class="productImg"
-                        src="./assets/images/motor.jpg"
-                    />
+                <div class="productCard" id="motorsControls">
+                    <img class="productImg" src="./assets/images/motor2.png" />
                     <h3>MOTORS & CONTROLS</h3>
                 </div>
 
-                <div class="flex-item" id="seals">
-                    <img class="productImg"
-                        src="./assets/images/seals.jpg"
-                    />
+                <div class="productCard" id="seals">
+                    <img class="productImg" src="./assets/images/seals2.png" />
                     <h3>SEALS</h3>
                 </div>
-                
-                <div class="flex-item" id="suppliesAccessories">
-                    <img class="productImg"
-                        src="./assets/images/bearing puller.png"
+
+                <div class="productCard" id="suppliesAccessories">
+                    <img
+                        class="productImg"
+                        src="./assets/images/bearing_puller2.png"
                     />
                     <h3>SUPPLIES & ACCESSORIES</h3>
                 </div>
-                
             </div>
-        </section>
 
-            
-        <section>
-            <h2 id="featuredManufacturers">FEATURED MANUFACTURERS</h2>
+            <h2 id="featuredManufacturersH2" class="secondaryHeader">FEATURED MANUFACTURERS</h2>
             <div id="marquee-container">
                 <div class="marquee">
                     <ul class="marquee-content">
@@ -485,10 +411,10 @@
                     Tucson, AZ, 85713 <br />
                     Ph.: (520) 622-3545 <br />
                     Toll Free: (888) 622-3545<br />
-                    Fax: (520) 622-7475 <br /></p>
-                    <p><span class="secondParagraph">HOURS OF OPERATION:</span> <br />
-                    Monday through Friday, <br />
-                    7:00am to 4:30pm</p>
+                    Fax: (520) 622-7475 <br />
+                    <span class="secondParagraph">HOURS OF OPERATION:</span>
+                    <span class="marginTop0"></span>Monday through Friday, <br />
+                    7:00am to 4:30pm</span></p>
                 </div>
 
                 <div id="locationImages">
@@ -503,7 +429,6 @@
             <div class="map-responsive">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3376.868917838967!2d-110.95907962573506!3d32.180809314218465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86d67a7f4acd22d1%3A0xc18d435d7add904!2s3688%20S%20Park%20Ave%2C%20Tucson%2C%20AZ%2085713!5e0!3m2!1sen!2sus!4v1776150784155!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            
         </section>
 
         <section id="contactUs">
@@ -512,49 +437,19 @@
                     CONTACT US
                 </h1>
                 <div id="contactInstructionsCard">  
-                    <p id="contactInstructions">Please fill out the form below. For parts inquiries, please be as descriptive as possible so that we may respond quickly and accurately. <br />
-                    <span class="red">*</span><span id="boldItalics"> Required Fields</span></p>
+                    <p id="contactInstructions">Please fill out the form below. For parts inquiries, please be as descriptive as possible so that we may respond quickly and accurately.
                 </div>
-                <div id="form">
-                    <form action="mailto:pablodlc@gmail.com" method="post" enctype="text/plain">
-                        <!-- <div class="form-group">
-                            <p id="formHeader"><span class="red">*</span><span id="italics">Required Fields</span></p>
-                        </div> -->
-                        <div class="form-group">
-                            <label for="contact-name"><span class="red">*</span> Name</label>
-                            <input type="text" id="contact-name" required placeholder="Your name" />
-                            </br>
-                        </div>
-                        <div class="form-group">
-                            <label for="contact-email"><span class="red">*</span> Email</label>
-                            <input type="email" id="contact-email" required placeholder="Your email address" />
-                            </br>
-                        </div>
-                        <div class="form-group">
-                            <label for="contact-phone">Phone</label>
-                            <input type="tel" id="contact-phone" placeholder="Your phone number" />
-                            </br>
-                        </div>
-                        <div class="form-group">
-                            <label for="contact-fax">Fax</label>
-                            <input type="tel" id="contact-fax" placeholder="Your fax" />
-                            </br>
-                        </div>
-                        <div class="form-group">
-                            <label for="contact-company">Company</label>
-                            <input type="text" id="contact-company" placeholder="Your company" />
-                            </br>
-                        </div>
-                        <div class="form-group">
-                            <label for="message"><span class="red">*</span> Message</label>
-                            <input type="text" id="contact-msg" required placeholder="Enter your message here" />
-                            </br>
-                        </div>
-
-                        <div id="buttons" class="form-group">
-                            <button type="submit" id="submitBtn" value="Send">SUBMIT</button>
-                            <button type="submit" id="clearBtn" value="Clear">CLEAR</button>
-                        </div>
+                <div id="formDiv">
+                    <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+                        <input type="hidden" name="access_key" value="1a1af87e-9e7a-4933-bdf7-2142aea45d0e">
+                        <label for="contact-name">Name</label>
+                        <input type="text" name="name" required placeholder="Enter your name here">
+                        <label for="contact-email">Email</label>
+                        <input type="email" name="email" required placeholder="Enter your email here">
+                        <label for="message">Message</label>
+                        <textarea name="message" required placeholder="Enter your message here"></textarea>
+                        <div class="h-captcha" data-captcha="true"></div>
+                        <button type="submit" id="submitBtn">Submit</button>
                     </form>
                 </div>
             </div>
@@ -742,17 +637,16 @@
                 </div>
                 <div class="modalFooter">
                     <h2>Manufacturers:</h2>
-                    <div id="suppliesAccessoriesFooterP">x
+                    <div id="suppliesAccessoriesFooterP">
                         <p><span class="normalSpace">Boston&nbsp;Gear</span> Lovejoy OTC Ringfeder Stafford <span class="normalSpace">Cone&nbsp;Mounter</span> Lubesite PIC Royersford <span class="normalSpace">Valu&nbsp;Guide</span> <span class="normalSpace">Link&nbsp;Belt</span> Maurey <span class="normalSpace">Posi&nbsp;Lock</span> Ruland</p>
                     </div>
                 </div>
             </div>
-        </div>    
+        </div>   
 
+        <div class="paperOverlay"></div>
+        <script src="https://web3forms.com/client/script.js" async defer></script>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="assets/js/script.js"></script>
     </body>
 </html>
-
-
-<!-- check motion industries and bearing, belt and chain, eastern industrial, and applied industrial technologies websites -->

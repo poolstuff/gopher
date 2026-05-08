@@ -2,14 +2,8 @@ const root = document.documentElement;
 const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
 const marqueeContent = document.querySelector("ul.marquee-content");
 
-root.style.setProperty("--marquee-elements", marqueeContent.children.length);
-
-for (let i = 0; i < marqueeElementsDisplayed; i++) {
-    marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
-}
-
-// Setting hiddenNav as a variable
-let hiddenNav = document.getElementById("hiddenNav")
+// Setting the form as a variable
+let formEl = document.getElementById("form");
 
 // Setting modals as variables
 let bearingsModal = document.getElementById("bearingsModal");
@@ -21,12 +15,8 @@ let powerTransmissionsModal = document.getElementById("powerTransmissionsModal")
 let sealsModal = document.getElementById("sealsModal");
 let suppliesAccessoriesModal = document.getElementById("suppliesAccessoriesModal");
 
-// Setting favicon burger as a variable
-let bars = document.getElementById("bars");
-
 // Setting form Submit button as a variable
 let submitBtn = document.getElementById("submitBtn");
-
 
 // Setting modal buttons as variables
 let bearingsBtn = document.getElementById("bearings");
@@ -48,9 +38,6 @@ let closePowerTransmissions = document.getElementById("closePowerTransmissions")
 let closeSeals = document.getElementById("closeSeals");
 let closeSuppliesAccessories = document.getElementById("closeSuppliesAccessories");
 
-// Bars click event Listeners
-bars.addEventListener('click', openNav);
-
 // Modal event Listeners
 bearingsBtn.addEventListener('click', openBearings);
 linearMotionBtn.addEventListener('click', openLinearMotion);
@@ -61,9 +48,21 @@ powerTransmissionsBtn.addEventListener('click', openPowerTransmissions);
 sealsBtn.addEventListener('click', openSeals);
 suppliesAccessoriesBtn.addEventListener('click', openSuppliesAccessories);
 
-// Display nav function
-function openNav() {
-    hiddenNav.style.display = "block";
+// MARQUEE HANDLING
+root.style.setProperty("--marquee-elements", marqueeContent.children.length);
+
+for (let i = 0; i < marqueeElementsDisplayed; i++) {
+    marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+}
+
+// HIDING AND SHOWING THE NAVBAR HANDLING
+function myFunction() {
+    let x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
 }
 
 // Open modal functions
@@ -91,10 +90,6 @@ function openSeals() {
 function openSuppliesAccessories() {
     suppliesAccessoriesModal.style.display = "block";
 }
-
-// function submitForm() {
-
-// }
 
 // Close button click event listeners
 closeBearings.addEventListener('click', funcCloseBearings);
@@ -131,3 +126,4 @@ function funcCloseSeals() {
 function funcCloseSuppliesAccessories() {
     suppliesAccessoriesModal.style.display = "none";
 }
+
