@@ -225,6 +225,10 @@ nav a {
         display: flex;
     }
 
+    #ourTeamH22 {
+        margin-top: 2rem 0 0 2rem;
+    }
+
     .empCards {
         display: flex;
         flex-direction: row;
@@ -236,6 +240,7 @@ nav a {
     font-family: montserrat;
     text-align: justify;
     line-height: 1.7;
+    font-size: 1.2rem;
 }
 
 @media screen and (max-width: 900px) {
@@ -316,7 +321,8 @@ nav a {
     position: relative;
     top: 0;
     width: 10rem;
-    height: 100%;
+    height: 10rem;
+    /* height: 100%; */
     content: "";
     z-index: 1;
 }
@@ -340,6 +346,7 @@ nav a {
 .marquee-content:hover {
     animation-play-state: paused;
 }
+
 
 @keyframes scrolling {
     0% {
@@ -385,6 +392,14 @@ nav a {
     flex-direction: row;
 }
 
+@media screen and (max-width: 900px) {
+    #location {
+        flex-direction: column;
+    }
+}
+
+
+
 #locationH1 {
     margin: 3rem 1rem 1rem 3rem;
 
@@ -399,6 +414,16 @@ nav a {
     margin: 0 5vw 25px 0;
     padding: 25px;
     line-height: 1.75;
+}
+
+@media screen and (max-width: 700px) {
+    #locationCard {
+        width: 100%;
+    }
+
+    #locationDiv {
+        text-align: center;
+    }
 }
 
 .marginTop0 {
@@ -418,14 +443,16 @@ nav a {
     flex-direction: column;
     margin-left: 2rem;
     font-family: roboto;
-    color: var(--priColor)
+    color: var(--priColor);
+    font-size: 1.2rem;
 }
 
 .map-responsive {
+    display: flex;
     padding-bottom: 56.25%;
     position: relative;
     width: 100%;
-    align-items: center;
+    justify-content: center;
 }
 
 .map-responsive iframe {
@@ -483,6 +510,12 @@ form {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     @media (width > 720px) {
         grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    form {
+        width: 75vw;
     }
 }
 
@@ -682,7 +715,3 @@ label {
     line-height: 1.5;
     color: var(--priColor)
 }
-
-
-
-
