@@ -38,15 +38,15 @@ let closePowerTransmissions = document.getElementById("closePowerTransmissions")
 let closeSeals = document.getElementById("closeSeals");
 let closeSuppliesAccessories = document.getElementById("closeSuppliesAccessories");
 
-// Modal event Listeners
-bearingsBtn.addEventListener('click', openBearings);
-linearMotionBtn.addEventListener('click', openLinearMotion);
-lubeAdhesivesBtn.addEventListener('click', openLubeAdhesives);
-materialHandlingBtn.addEventListener('click', openMaterialHandling);
-motorsControlsBtn.addEventListener('click', openMotorsControls);
-powerTransmissionsBtn.addEventListener('click', openPowerTransmissions);
-sealsBtn.addEventListener('click', openSeals);
-suppliesAccessoriesBtn.addEventListener('click', openSuppliesAccessories);
+// Modal event listeners
+bearingsBtn.addEventListener("click", openBearings);
+linearMotionBtn.addEventListener("click", openLinearMotion);
+lubeAdhesivesBtn.addEventListener("click", openLubeAdhesives);
+materialHandlingBtn.addEventListener("click", openMaterialHandling);
+motorsControlsBtn.addEventListener("click", openMotorsControls);
+powerTransmissionsBtn.addEventListener("click", openPowerTransmissions);
+sealsBtn.addEventListener("click", openSeals);
+suppliesAccessoriesBtn.addEventListener("click", openSuppliesAccessories);
 
 // MARQUEE HANDLING
 root.style.setProperty("--marquee-elements", marqueeContent.children.length);
@@ -55,75 +55,139 @@ for (let i = 0; i < marqueeElementsDisplayed; i++) {
     marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
 }
 
-// HIDING AND SHOWING THE NAVBAR HANDLING
+// MOBILE NAV HANDLING
+const mobileMenu = document.getElementById("myLinks");
+const burgerBtn = document.querySelector(".topnav .icon");
+
 function myFunction() {
-    let x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "block";
-    }
+    mobileMenu.style.display =
+        mobileMenu.style.display === "block" ? "none" : "block";
 }
+
+// Close mobile menu when a menu link is clicked
+mobileMenu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+        mobileMenu.style.display = "none";
+    });
+});
+
+// Close mobile menu when clicking outside of it
+document.addEventListener("click", (event) => {
+    const clickedInsideMenu = mobileMenu.contains(event.target);
+    const clickedBurger = burgerBtn.contains(event.target);
+
+    if (!clickedInsideMenu && !clickedBurger) {
+        mobileMenu.style.display = "none";
+    }
+});
 
 // Open modal functions
 function openBearings() {
     bearingsModal.style.display = "block";
 }
+
 function openLinearMotion() {
     linearMotionModal.style.display = "block";
 }
+
 function openLubeAdhesives() {
     lubeAdhesivesModal.style.display = "block";
 }
+
 function openMaterialHandling() {
     materialHandlingModal.style.display = "block";
 }
+
 function openMotorsControls() {
     motorsControlsModal.style.display = "block";
 }
+
 function openPowerTransmissions() {
     powerTransmissionsModal.style.display = "block";
 }
+
 function openSeals() {
     sealsModal.style.display = "block";
 }
+
 function openSuppliesAccessories() {
     suppliesAccessoriesModal.style.display = "block";
 }
 
 // Close button click event listeners
-closeBearings.addEventListener('click', funcCloseBearings);
-closeLinearMotion.addEventListener('click', funcCloseLinearMotion);
-closeLubeAdhesives.addEventListener('click', funcCloseLubeAdhesives);
-closeMaterialHandling.addEventListener('click', funcCloseMaterialHandling);
-closeMotorsControls.addEventListener('click', funcCloseMotorsControls);
-closePowerTransmissions.addEventListener('click', funcClosePowerTransmissions);
-closeSeals.addEventListener('click', funcCloseSeals);
-closeSuppliesAccessories.addEventListener('click', funcCloseSuppliesAccessories);
+closeBearings.addEventListener("click", funcCloseBearings);
+closeLinearMotion.addEventListener("click", funcCloseLinearMotion);
+closeLubeAdhesives.addEventListener("click", funcCloseLubeAdhesives);
+closeMaterialHandling.addEventListener("click", funcCloseMaterialHandling);
+closeMotorsControls.addEventListener("click", funcCloseMotorsControls);
+closePowerTransmissions.addEventListener("click", funcClosePowerTransmissions);
+closeSeals.addEventListener("click", funcCloseSeals);
+closeSuppliesAccessories.addEventListener("click", funcCloseSuppliesAccessories);
 
 // Functions to close modals
 function funcCloseBearings() {
     bearingsModal.style.display = "none";
 }
+
 function funcCloseLinearMotion() {
     linearMotionModal.style.display = "none";
 }
+
 function funcCloseLubeAdhesives() {
     lubeAdhesivesModal.style.display = "none";
 }
+
 function funcCloseMaterialHandling() {
     materialHandlingModal.style.display = "none";
 }
+
 function funcCloseMotorsControls() {
     motorsControlsModal.style.display = "none";
 }
+
 function funcClosePowerTransmissions() {
     powerTransmissionsModal.style.display = "none";
 }
+
 function funcCloseSeals() {
     sealsModal.style.display = "none";
 }
+
 function funcCloseSuppliesAccessories() {
     suppliesAccessoriesModal.style.display = "none";
 }
 
+// CLOSE MODALS WHEN CLICKING OUTSIDE THE MODAL CONTENT
+window.addEventListener("click", (event) => {
+    if (event.target === bearingsModal) {
+        bearingsModal.style.display = "none";
+    }
+
+    if (event.target === linearMotionModal) {
+        linearMotionModal.style.display = "none";
+    }
+
+    if (event.target === lubeAdhesivesModal) {
+        lubeAdhesivesModal.style.display = "none";
+    }
+
+    if (event.target === materialHandlingModal) {
+        materialHandlingModal.style.display = "none";
+    }
+
+    if (event.target === motorsControlsModal) {
+        motorsControlsModal.style.display = "none";
+    }
+
+    if (event.target === powerTransmissionsModal) {
+        powerTransmissionsModal.style.display = "none";
+    }
+
+    if (event.target === sealsModal) {
+        sealsModal.style.display = "none";
+    }
+
+    if (event.target === suppliesAccessoriesModal) {
+        suppliesAccessoriesModal.style.display = "none";
+    }
+});
